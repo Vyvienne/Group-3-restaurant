@@ -1,0 +1,329 @@
+html{ 
+    display: flex; 
+    height: 100%; 
+}
+
+body{
+    background: url('img/bg005.jpg')no-repeat center fixed;     
+    background-size: cover;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: verdana;
+}
+
+.smLogo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position:relative;
+}
+
+.smLogo:hover{
+  color: skyblue;
+  box-shadow: 0 0 25px skyblue;
+  text-shadow: 0 0 25px skyblue;
+}
+
+.nav {
+  display: table-cell;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 800;
+}
+
+.nav a::before, .nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 80%;
+  margin-top: -0.5px;
+  background: red;
+}
+
+.nav a:before {
+  left: -2.5px;
+}
+.nav a:after {
+  right: 2.5px;
+  background: red;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav a:hover:before {
+  background: red;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+
+.best123{
+    background-color: white;
+}
+
+.best123:hover{
+    background: pink;
+}
+
+.carousel-indicators{
+    background: none;
+}
+
+.btmMenu{
+    position: relative;
+}
+
+/* SIBLING FADE: fade out siblings around a hovered item */
+.sibling-fade { visibility: hidden; }
+/* Prevents :hover from triggering in the gaps between items */
+
+.sibling-fade > * { visibility: visible; }
+/* Brings the child items back in, even though the parent is `hidden` */
+
+.sibling-fade > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+.sibling-fade:hover > * { opacity: 0.4; transform: scale(0.9); }
+/* Fade out all items when the parent is hovered */
+
+.sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+/* Fade in the currently hovered item */
+
+.sibling-fade {
+  display: flex;
+}
+
+.sibling-fade > * {
+  background: pink;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  position: relative;
+  top: -320px;
+  width: 180px;
+  height: 180px;
+  line-height: 130px;
+}
+
+.browseT{
+    width: 100%;
+    height: 50px;
+    color: black;
+    background: transparent;
+    position: relative;
+    top: -420px;
+}
+
+.foodIcon{
+    background:  url("img/foodIcon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.drinkIcon{
+    background:  url("img/drinksIcon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;    
+}
+
+.breadIcon{
+    background:  url("img/breadIcon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;    
+}
+
+.snackIcon{
+    background:  url("img/snackIcon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;    
+}
+
+.bestSellerTab{
+    position: relative;
+    background: transparent;
+    top: 200px;
+ 
+}
+
+.topMenu{
+    margin: 0px;
+    padding: 0px;
+    border: transparent;
+    color: white;
+    border-bottom: 2px solid black;
+    background: url('img/bg004.jpg')no-repeat center fixed;     
+    background-size: cover;
+}
+
+.hMenu{
+     display: inline;
+     padding:10px;
+     margin-left: 20px;
+     text-decoration:none;
+     font-size: 25px;
+     color: white;
+     position: relative;
+     height: 20px;
+     width: auto;
+     left: 60px;
+     top: 70px;
+     object-fit: cover;
+     background: transparent;
+}
+
+.midMenu{
+    height: auto;  
+    text-align: center;  
+    padding: 10px;  
+    margin: 10px;
+    box-shadow:0px 0px 10px black;  
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.bigLogo{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position:relative;
+    box-shadow: 0px 0px 10px pink;
+}
+
+.userInfo{
+    position: relative;
+    left:650px;
+    top:-150px;
+}
+
+.logIn,.register{
+    height: 30px;
+    width: 80px;
+}
+
+.mainImg{
+    width:100%;
+    height: 800px;
+}
+
+.bigImg2{
+    width: 100%;
+    height: 700px;
+    position:relative;
+    box-shadow: 0px 0px 30px white;
+}
+
+.iis{
+    height: 30px;
+    width: 200px;
+    text-decoration:none;
+}
+
+.desc{
+    width: 50%;
+    color: white;
+    position: relative;
+    top:-300px;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: none;
+    font-size: 18px;
+}
+
+.about{
+    position: relative;
+    background: black;
+}
+
+.triangle{
+  position: relative;
+  top: -700px;
+  width: 0; 
+  height: 0; 
+  border-top: 125px solid plum;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  
+}
+
+.aboutTitle{
+    position: relative;
+    right: 50px;
+    top:-100px;
+    width: 120px;
+    color: white;
+    background: transparent;
+}
+
+.Foodtab{
+    position: relative;
+    background: transparent;
+    top: 200px;
+}
+
+
+.study{
+    position: relative;
+    text-decoration:none;
+    list-style-type: none;
+    color: white;
+    background: transparent;
+}
+
+.uniTitle{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background: transparent;
+}
+
+.bestsPic{
+    height: 300px;
+    object-fit: fill;
+}
+
+.card-footer:hover{
+  background: pink;
+}
+
+.browseFood{
+    display: inline;
+    position: relative;
+}
+
+.bestS{
+    color: white;
+    width: 100%;
+    background: transparent;
+}
+
+.carousel-inner{
+  
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 27, 2021, 2:56:48 PM
+    Author     : vivie
+*/
+

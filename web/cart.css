@@ -1,0 +1,110 @@
+#cart-wrap {
+  font-family: verdana;
+  display: flex;
+  margin: 0 auto;
+  overflow: hidden; /* HIDE OVERFLOW CONTENTS*/
+  width: 1520px;
+  background-color: white;      
+}
+
+#cart-products, #cart-items {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+#cart-products { width: 75%; }
+
+
+#cart-items { width: 25%; }
+input.cart, button.cart {
+  padding: 7px;
+  border-radius: 12px;
+  border: none;
+  background: red;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input.cart:hover, button.cart:hover {
+    background: #ff6666;
+    color: black;
+}
+
+
+#cart-products {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+}
+
+.p-item {
+  padding: 30px;
+  border: 1px solid blue;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.p-img { max-width: 400px; border-radius: 50%;}
+.p-name, .p-price { font-weight: 700; }
+.p-name, .p-desc, .p-price { margin: 20px 0; }
+.p-name { text-transform: uppercase; }
+.p-desc {
+  color: black;
+  font-size: 14px;
+}
+.p-price { font-size: 22px; }
+input.p-add { width: 70%; }
+
+#cart-items {
+  background: url('img/bg010.jpg')no-repeat center fixed;     
+  background-size: cover;
+  color: white;
+  border-radius: 7px;
+}
+.c-item {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.c-item > * { box-sizing: border-box;  border-radius: 12px;}
+.c-name, .c-total {width: 100%; }
+.c-total { margin-top: 10px; }
+.c-del { width: 30%; position: relative; left: 10px; }
+.c-qty { width: 60%; text-align: center; }
+.c-total {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+input.c-empty{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    height: 3%;
+    width: 40%;
+    border-radius: 50%;
+}
+input.c-empty:hover{
+    background-color: lightpink;
+}
+
+input.c-checkout{
+    background-color: green;
+    height: 3%;
+    width: 40%;
+    position:relative;
+    left:70px;
+    border-radius: 50%;
+}
+
+input.c-checkout:hover{
+    background-color: lightgreen;
+}
+
+@media screen AND (max-width: 768px) {          /*SETTINGS FOR RESPONSIVE SCREEN AND THE WRAPED ITEMS OF THE CART AND THE PRODUCTS*/
+  #cart-wrap { grid-template-columns: 60% 40%; }
+  #cart-products { grid-template-columns: auto; }
+}
+
+

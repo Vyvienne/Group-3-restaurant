@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Forgot password</title>
+        
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+    </head>
+    <body>
+        <!--Message box-->
+        <script>
+        function showBox() {
+          alert("An email has been send, Please check your mailbox!");
+        }
+        </script>
+        
+        <div class="loginCard">
+        <img src="img/icon.jpg" class="leftLoginImg" alt="leftLoginImg">
+        
+            <div class="rightLogin">
+                <form action="logIn" method="post">
+                    <h1 id="logintitle" style="left:20px; font-size: 30px;">FORGOT PASSWORD</h1>
+                    <div class="login1">
+                        <!--Get user information-->
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" id="uname" name="name" placeholder="Username" required> <br> <br>
+
+                        <i class="fa fa-envelope icon"> </i>
+                        <input type="email" id="upw" name="email" placeholder="Email" required> <br> <br>
+
+                    </div>
+                    
+                    <div class="login2">
+                    <input type="button" id="bckbtn" onclick="window.location.href='loginPg.jsp';" value="Back" />
+                    
+                    <input type="submit" id="loginbtn" onclick="showBox()" value="Send email">
+                    </div>                    
+                  
+                </form>
+            </div>
+
+        
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Admin Tool</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="admincss.css">
+
+</head>
+<body style="background: url('img/adminwallpaper2.jpg')no-repeat center fixed; background-size: cover;">
+
+    
+<center>   <h1>ADMIN TOOL</h1> </center>
+
+<center>
+<div class="menu1">
+    <!--Add user into the database-->
+<form action="adminreg" method="post">
+<h1 id="logintitle">ADD USER</h1>
+<div class="login1">
+<input type="text" name="uname" id="field" placeholder="Username" required> <br> <br>
+<input type="text" name="email" id="field" placeholder="Email" required> <br> <br>                        
+<input type="password" name="pw" id="field" placeholder="Password" required> <br> <br>
+</div>
+<div class="reg2">
+<input type="submit" id="btn" value="Add User">
+</div>
+</form>
+</div>
+</center>
+
+     <br> <br> <br> <br>
+
+<center>
+<div class="menu2">   
+    <!--Filter user based on the input string-->
+<form action="Search">
+<h1 id="logintitle">SEARCH USER</h1>
+<input type="text" id="field" name="uname" placeholder="Find username" required> <br> <br>
+<input type="submit" id="btn" value="Search">
+</form>
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,162 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /*hide the horizontal scroller*/
+}
+
+body{
+    background: url('img/bg001.jpg')no-repeat center fixed;     /*background of the page*/
+    background-size: cover;
+}
+
+.img-fluid{
+    width: 100%;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: verdana;
+}
+
+.topMenu{
+    margin: 0px;
+    padding: 0px;
+    border: transparent;
+    color: white;
+    border-bottom: 2px solid black;
+    background: url('img/bg004.jpg')no-repeat center fixed;     
+    background-size: cover;
+    
+}
+
+.nav {
+  display: table-cell;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 800;
+}
+
+.nav a::before, .nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 80%;
+  margin-top: -0.5px;
+  background: red;
+}
+
+.nav a:before {
+  left: -2.5px;
+}
+.nav a:after {
+  right: 2.5px;
+  background: red;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav a:hover:before {   
+  background: red;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav a:hover:after {    /*hover to trigger the action*/
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.hMenu{
+     display: inline;
+     padding:10px;
+     margin-left: 20px;
+     text-decoration:none;
+     font-size: 25px;
+     color: white;
+     position: relative;
+     height: 20px;
+     width: auto;
+     left: 60px;
+     top: 70px;
+     object-fit: cover;
+     background: transparent;
+}
+.bigLogo{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position:relative;
+    box-shadow: 0px 0px 10px pink;
+}
+.row-about-us {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.column-about-us {
+  flex: 33.33%;
+  padding: 5px;
+  position: relative;
+  width: 50%;
+}
+.column-about-us:hover .overlay-about-us {
+  opacity: 0.8;
+}
+.overlay-about-us:hover {   /*trigger the style when hover on it*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.overlay-about-us {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: transparent;
+}
+.text-about-us {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.btmMenu{
+    position: relative;
+}
+.smLogo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position:relative;
+}
+
+.smLogo:hover{
+  color: skyblue;
+  box-shadow: 0 0 25px skyblue;
+  text-shadow: 0 0 25px skyblue;
+}
+
+.container-fluid{
+    background-color: transparent;
+}
+
+
