@@ -22,4 +22,4 @@ To run the project locally:
 ```bash
 git clone https://github.com/Vyvienne/Group-3-restaurant.git
 cd Group-3-restaurant
-# Open index.html in your browser
+# Open home.jsp in your browser
